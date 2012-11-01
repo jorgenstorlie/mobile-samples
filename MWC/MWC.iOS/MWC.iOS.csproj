@@ -185,6 +185,60 @@
     <Compile Include="UI\Controls\UnderlineLabel.cs" />
     <Compile Include="Screens\Common\About\AboutXamarinScreen.cs" />
     <Compile Include="ConsoleD.cs" />
+    <Compile Include="..\MWC.Core\BL\Conference.cs">
+      <Link>Conference.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Exhibitor.cs">
+      <Link>Exhibitor.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Favorite.cs">
+      <Link>Favorite.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Session.cs">
+      <Link>Session.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\SessionSpeaker.cs">
+      <Link>SessionSpeaker.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\SessionTimeslot.cs">
+      <Link>SessionTimeslot.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Speaker.cs">
+      <Link>Speaker.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Contracts\BusinessEntityBase.cs">
+      <Link>Contracts\BusinessEntityBase.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Contracts\IBusinessEntity.cs">
+      <Link>Contracts\IBusinessEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Managers\DaysManager.cs">
+      <Link>Managers\DaysManager.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Managers\ExhibitorManager.cs">
+      <Link>Managers\ExhibitorManager.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Managers\FavoritesManager.cs">
+      <Link>Managers\FavoritesManager.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Managers\NewsManager.cs">
+      <Link>Managers\NewsManager.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Managers\SessionManager.cs">
+      <Link>Managers\SessionManager.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Managers\SpeakerManager.cs">
+      <Link>Managers\SpeakerManager.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Managers\TwitterFeedManager.cs">
+      <Link>Managers\TwitterFeedManager.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Managers\UpdateFinishedEventArgs.cs">
+      <Link>Managers\UpdateFinishedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\MWC.Core\BL\Managers\UpdateManager.cs">
+      <Link>Managers\UpdateManager.cs</Link>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -221,6 +275,7 @@
     <Folder Include="Images\About\" />
     <Folder Include="Images\About\iPad\" />
     <Folder Include="Images\About\iPhone\" />
+    <Folder Include="BL\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Screens\Common\About\AboutXamScreen_iPhone.xib" />
@@ -231,12 +286,6 @@
     <InterfaceDefinition Include="Screens\Common\Session\SessionDetailsScreen_iPad.xib" />
     <InterfaceDefinition Include="Screens\iPhone\Home\HomeScreen_iPhone.xib" />
     <InterfaceDefinition Include="Screens\iPhone\Home\HomeScreen_iPad.xib" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MWC.Core\MWC.Core.MT.csproj">
-      <Project>{CAA47381-0DBB-461D-8EB6-4D00AC453656}</Project>
-      <Name>MWC.Core.MT</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\MWCLogo.png" />

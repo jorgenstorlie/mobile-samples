@@ -9,8 +9,7 @@ namespace MWC.iOS.UI.CustomElements {
 		UILabel date, user, handle, tweetLabel;
 		UIImageView image;
 
-		BL.Tweet tweet;
-		const int ImageSpace = 32;
+			const int ImageSpace = 32;
 		const int Padding = 8;
 		
 		public TweetCell (UITableViewCellStyle style, NSString ident, BL.Tweet Tweet) : base (style, ident)
